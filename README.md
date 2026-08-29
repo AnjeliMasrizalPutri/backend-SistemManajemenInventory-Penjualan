@@ -71,7 +71,7 @@ Dengan sistem berbasis web, proses pengelolaan data dapat dilakukan secara lebih
 
 | Teknologi           | Penggunaan                      |
 | ------------------- | ------------------------------- |
-| **Laravel 11**      | Backend framework               |
+| **Laravel 12**      | Backend framework               |
 | **PHP**             | Programming language            |
 | **PostgreSQL**           | Database                        |
 | **Eloquent ORM**    | Database interaction            |
@@ -297,7 +297,7 @@ Pastikan environment sudah memiliki:
 * PHP 8.x
 * Composer
 * PostgreSQL
-* Laravel 11
+* Laravel 12
 * Node.js & npm untuk menjalankan frontend
 
 ---
