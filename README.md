@@ -73,7 +73,7 @@ Dengan sistem berbasis web, proses pengelolaan data dapat dilakukan secara lebih
 | ------------------- | ------------------------------- |
 | **Laravel 11**      | Backend framework               |
 | **PHP**             | Programming language            |
-| **MySQL**           | Database                        |
+| **PostgreSQL**           | Database                        |
 | **Eloquent ORM**    | Database interaction            |
 | **Laravel Sanctum** | Authentication                  |
 | **REST API**        | Komunikasi frontend dan backend |
@@ -116,7 +116,7 @@ Project menggunakan pendekatan **separated frontend dan backend**.
                                     │
                                     ▼
                          ┌──────────────────────┐
-                         │        MySQL         │
+                         │      PostgreSQL      │
                          │                      │
                          │ Application Data     │
                          └──────────────────────┘
@@ -277,7 +277,7 @@ Controller
 Eloquent Model
       │
       ▼
-MySQL
+PostgreSQL
       │
       ▼
 JSON Response
@@ -296,7 +296,7 @@ Pastikan environment sudah memiliki:
 
 * PHP 8.x
 * Composer
-* MySQL
+* PostgreSQL
 * Laravel 11
 * Node.js & npm untuk menjalankan frontend
 
@@ -348,9 +348,9 @@ APP_ENV=local
 APP_DEBUG=true
 APP_URL=http://127.0.0.1:8000
 
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5434
 DB_DATABASE=udnana
 DB_USERNAME=root
 DB_PASSWORD=
@@ -494,7 +494,7 @@ Backend
 Laravel REST API
     │
     ▼
-MySQL
+PostgreSQL
 ```
 
 ---
@@ -522,7 +522,7 @@ Beberapa environment variable utama:
 
 # 🗃️ Database
 
-Database menggunakan **MySQL** sebagai media penyimpanan data aplikasi.
+Database menggunakan **PostgreSQL** sebagai media penyimpanan data aplikasi.
 
 Laravel Eloquent ORM digunakan untuk berinteraksi dengan database melalui model.
 
@@ -606,37 +606,13 @@ Beberapa hal yang perlu diperhatikan:
 
 ---
 
-# 📸 Preview
-
-Screenshot API atau dokumentasi endpoint dapat ditambahkan pada bagian ini jika diperlukan.
-
-Contoh:
-
-```markdown
-## 📸 Preview
-
-### API Login
-
-![API Login](./screenshots/api-login.png)
-
-### API Barang
-
-![API Barang](./screenshots/api-barang.png)
-
-### API Transaksi
-
-![API Transaksi](./screenshots/api-transaksi.png)
-```
-
----
-
 # 📚 Dokumentasi
 
 Dokumentasi resmi teknologi yang digunakan:
 
 * Laravel
 * PHP
-* MySQL
+* PostgreSQL
 * Laravel Sanctum
 
 Dokumentasi API internal dapat ditambahkan menggunakan Postman Collection atau dokumentasi endpoint apabila project dikembangkan lebih lanjut.
